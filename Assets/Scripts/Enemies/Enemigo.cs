@@ -6,7 +6,7 @@ public class Enemigo : MonoBehaviour
     public Sprite[] spritesAnimacion;
 
     // Tiempo (en segundos) entre cada frame de animación
-    public float tiempoAnimacion = 0.2f;
+    public float tiempoAnimacion = 1f;
 
     // SpriteRenderer que se encarga de mostrar el sprite en pantalla
     private SpriteRenderer renderizadorSprite;

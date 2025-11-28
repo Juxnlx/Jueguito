@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemigosPrefabs:
-  - {fileID: 8119009444976328008, guid: a961ce9ed0cf09f4f8a5a7f8c156d233, type: 3}
-  - {fileID: 8119009444976328008, guid: a961ce9ed0cf09f4f8a5a7f8c156d233, type: 3}
+  - {fileID: -6640361759355197712, guid: f374555e57de1b741abdf62a799c03e5, type: 3}
+  - {fileID: -6640361759355197712, guid: f374555e57de1b741abdf62a799c03e5, type: 3}
   - {fileID: 8119009444976328008, guid: a961ce9ed0cf09f4f8a5a7f8c156d233, type: 3}
   - {fileID: 8119009444976328008, guid: a961ce9ed0cf09f4f8a5a7f8c156d233, type: 3}
   - {fileID: 8119009444976328008, guid: a961ce9ed0cf09f4f8a5a7f8c156d233, type: 3}
@@ -161,7 +161,7 @@ MonoBehaviour:
   columnas: 6
   separacionX: 4
   separacionY: 4
-  velocidad: 4
+  velocidad: 2
 --- !u!4 &380330178
 Transform:
   m_ObjectHideFlags: 0
