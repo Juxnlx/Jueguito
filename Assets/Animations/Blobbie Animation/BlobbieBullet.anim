@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: runBlobbie
+  m_Name: BlobbieBullet
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1882347247711912902, guid: 30977e028d0491f488e7ca686b3aebec, type: 3}
+      value: {fileID: 278916232, guid: 5608e277bf22ba24fadff084b58a23c9, type: 3}
     - time: 0.083333336
-      value: {fileID: 7439426567979852956, guid: 30977e028d0491f488e7ca686b3aebec, type: 3}
+      value: {fileID: 131358803, guid: 5608e277bf22ba24fadff084b58a23c9, type: 3}
     - time: 0.16666667
-      value: {fileID: -2673560216460186399, guid: 30977e028d0491f488e7ca686b3aebec, type: 3}
+      value: {fileID: 1436644230, guid: 5608e277bf22ba24fadff084b58a23c9, type: 3}
     - time: 0.25
-      value: {fileID: -5822559823783948592, guid: 30977e028d0491f488e7ca686b3aebec, type: 3}
+      value: {fileID: 712574292, guid: 5608e277bf22ba24fadff084b58a23c9, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,10 +50,10 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1882347247711912902, guid: 30977e028d0491f488e7ca686b3aebec, type: 3}
-    - {fileID: 7439426567979852956, guid: 30977e028d0491f488e7ca686b3aebec, type: 3}
-    - {fileID: -2673560216460186399, guid: 30977e028d0491f488e7ca686b3aebec, type: 3}
-    - {fileID: -5822559823783948592, guid: 30977e028d0491f488e7ca686b3aebec, type: 3}
+    - {fileID: 278916232, guid: 5608e277bf22ba24fadff084b58a23c9, type: 3}
+    - {fileID: 131358803, guid: 5608e277bf22ba24fadff084b58a23c9, type: 3}
+    - {fileID: 1436644230, guid: 5608e277bf22ba24fadff084b58a23c9, type: 3}
+    - {fileID: 712574292, guid: 5608e277bf22ba24fadff084b58a23c9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -64,7 +64,7 @@ AnimationClip:
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -78,4 +78,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: destroyBala
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: dfadbcecb15b78742b77d9dc24b7f5c0, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
