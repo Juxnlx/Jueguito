@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|c:\\users\\juanl\\onedrive\\escritorio\\2\u00BA daw\\jueguito\\assets\\scripts\\enemies\\enemigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\assets\\scripts\\enemies\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|c:\\users\\juanl\\onedrive\\escritorio\\2\u00BA daw\\jueguito\\assets\\scripts\\enemies\\enemigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Enemigo.cs",
               "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Enemies\\Enemigo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemigo.cs",
               "ToolTip": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Enemies\\Enemigo.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemigo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T19:02:18.603Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Enemigos.cs",
               "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Enemies\\Enemigos.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemigos.cs",
               "ToolTip": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Enemies\\Enemigos.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemigos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAgwF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T18:55:22.765Z",
               "EditorCaption": ""
