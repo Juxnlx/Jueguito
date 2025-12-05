@@ -16,7 +16,7 @@ public class MonoBehaviourBlobbie : MonoBehaviour
     //almacena el prefab
     public GameObject prefabBala;
     //gestiona el último disparo
-    private float ultimoDisparo;
+    private float ultimoDisparo = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +26,7 @@ public class MonoBehaviourBlobbie : MonoBehaviour
 
         // agarra el componente que está en el inspector. carga el componente animator del objeto en la variable
         animator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -40,7 +41,7 @@ public class MonoBehaviourBlobbie : MonoBehaviour
         {
             Shoot();
             ultimoDisparo = Time.time;
-        }
+        };
 
     }
 
@@ -55,13 +56,14 @@ public class MonoBehaviourBlobbie : MonoBehaviour
     {
         GameObject bala = Instantiate(
             prefabBala,
-            //no hace falte que cambie la posición de la bala porque siempre irá a la derecha
             transform.position + Vector3.right * 0.1f,
             Quaternion.identity
-            );
+        );
 
+        // Destruir la bala después de 3 segundos
+        Destroy(bala, 1f);
     }
-       
+
     //método para poder destruir la bala
     public void destroyBala()
     {
