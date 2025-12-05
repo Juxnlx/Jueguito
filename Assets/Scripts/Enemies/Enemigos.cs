@@ -4,24 +4,41 @@ using UnityEngine;
 
 public class Enemigos : MonoBehaviour
 {
-    public Enemigo[] enemigosPrefabs; // Prefabs de enemigos, uno por fila
+    public Enemigo prefabM; // Minotauro
+    public Enemigo prefabS; // Seta
 
-    public int filas = 5;
-    public int columnas = 6;
+    public int filas = 4;
+    public int columnas = 5;
 
-    public float separacionX = 4.0f; // Separación horizontal
-    public float separacionY = 4.0f; // Separación vertical
-    public float velocidad = 2.0f;   // Velocidad de movimiento
+    public float separacionX = 0.1f;
+    public float separacionY = 0.35f;
+    public float velocidad = 0.7f;
 
-    private bool subiendo = false;    // Dirección vertical: true = arriba, false = abajo
-    private float limiteSuperior;     // Y máximo de la cámara
-    private float limiteInferior;     // Y mínimo de la cámara
+    public float pasoIzquierda = 0.2f;
+
+    private bool subiendo = false;
+    private float limiteSuperior;
+    private float limiteInferior;
 
     private void Awake()
     {
-        // Crear la formación de enemigos
-        Vector3 startPos = transform.position;
+        // Ancho y alto máximo según prefabs
+        float anchoMax = Mathf.Max(prefabM.GetComponent<SpriteRenderer>().bounds.size.x,
+                                   prefabS.GetComponent<SpriteRenderer>().bounds.size.x);
+        float altoMax = Mathf.Max(prefabM.GetComponent<SpriteRenderer>().bounds.size.y,
+                                  prefabS.GetComponent<SpriteRenderer>().bounds.size.y);
 
+        float margen = 0.05f;
+        separacionX = anchoMax + margen;
+        separacionY = altoMax + margen;
+
+        Vector3 startPos = new Vector3(
+            -separacionX * (columnas - 1) / 2f,
+            transform.position.y,
+            0
+        );
+
+        int numColumnasS = 3; // primeras 3 columnas S
         for (int fila = 0; fila < filas; fila++)
         {
             Vector3 posicionFila = new Vector3(
@@ -32,10 +49,8 @@ public class Enemigos : MonoBehaviour
 
             for (int col = 0; col < columnas; col++)
             {
-                Enemigo enemigo = Instantiate(
-                    enemigosPrefabs[fila % enemigosPrefabs.Length],
-                    this.transform
-                );
+                Enemigo prefabElegido = (col < numColumnasS) ? prefabS : prefabM;
+                Enemigo enemigo = Instantiate(prefabElegido, this.transform);
 
                 Vector3 posicion = posicionFila;
                 posicion.x += col * separacionX;
@@ -43,7 +58,6 @@ public class Enemigos : MonoBehaviour
             }
         }
 
-        // Calcular límites de la cámara en Y
         Vector3 bottomLeft = Camera.main.ViewportToWorldPoint(Vector3.zero);
         Vector3 topRight = Camera.main.ViewportToWorldPoint(Vector3.one);
         limiteInferior = bottomLeft.y;
@@ -52,17 +66,12 @@ public class Enemigos : MonoBehaviour
 
     private void Update()
     {
-        // Determinar dirección vertical
         float dirY = subiendo ? 1 : -1;
-
-        // Mover toda la formación verticalmente
         transform.position += Vector3.up * dirY * velocidad * Time.deltaTime;
 
-        // Revisar si algún enemigo tocó los límites superior o inferior
         foreach (Transform enemigo in transform)
         {
-            if (!enemigo.gameObject.activeInHierarchy)
-                continue;
+            if (!enemigo.gameObject.activeInHierarchy) continue;
 
             if (!subiendo && enemigo.position.y <= limiteInferior)
             {
@@ -77,18 +86,11 @@ public class Enemigos : MonoBehaviour
         }
     }
 
-    // Función para cambiar la dirección vertical y mover un paso hacia la izquierda
     private void CambiarDireccion()
     {
-        // Cambiamos la dirección vertical
         subiendo = !subiendo;
-
-        // Retrocedemos un paso hacia la izquierda
         Vector3 pos = transform.position;
-        pos.x -= separacionX; // Paso hacia la izquierda
+        pos.x -= pasoIzquierda;
         transform.position = pos;
     }
 }
-
-
-
