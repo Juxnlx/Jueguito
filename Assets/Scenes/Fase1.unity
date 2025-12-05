@@ -39144,11 +39144,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabM: {fileID: -6640361759355197712, guid: f374555e57de1b741abdf62a799c03e5, type: 3}
   prefabS: {fileID: 8119009444976328008, guid: a961ce9ed0cf09f4f8a5a7f8c156d233, type: 3}
-  filas: 5
-  columnas: 6
-  separacionX: 4
-  separacionY: 4
-  velocidad: 2
+  filas: 4
+  columnas: 5
+  separacionX: 0.1
+  separacionY: 0.35
+  velocidad: 0.7
   pasoIzquierda: 0.2
 --- !u!4 &1967643598
 Transform:

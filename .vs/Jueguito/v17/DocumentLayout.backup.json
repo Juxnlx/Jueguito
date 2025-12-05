@@ -1,10 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\albad\\OneDrive\\Documentos\\GitHub\\Jueguito\\",
+  "WorkspaceRootPath": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\albad\\OneDrive\\Documentos\\GitHub\\Jueguito\\Assets\\Scripts\\UI\\CambioDeVista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\CambioDeVista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|c:\\users\\juanl\\onedrive\\escritorio\\2\u00BA daw\\jueguito\\assets\\scripts\\enemies\\enemigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|c:\\users\\juanl\\onedrive\\escritorio\\2\u00BA daw\\jueguito\\assets\\scripts\\enemies\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|c:\\users\\juanl\\onedrive\\escritorio\\2\u00BA daw\\jueguito\\assets\\scripts\\player\\monobehaviourblobbie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\monobehaviourblobbie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\assets\\scripts\\ui\\cambiodevista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\cambiodevista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\assets\\scripts\\player\\monobehaviourbalablobbie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\monobehaviourbalablobbie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ana.montero\\My project\\Assets\\scripts\\JohnMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +38,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CambioDeVista.cs",
-              "DocumentMoniker": "C:\\Users\\albad\\OneDrive\\Documentos\\GitHub\\Jueguito\\Assets\\Scripts\\UI\\CambioDeVista.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\CambioDeVista.cs",
-              "ToolTip": "C:\\Users\\albad\\OneDrive\\Documentos\\GitHub\\Jueguito\\Assets\\Scripts\\UI\\CambioDeVista.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\CambioDeVista.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Title": "Enemigos.cs",
+              "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Enemies\\Enemigos.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemigos.cs",
+              "ToolTip": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Enemies\\Enemigos.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemigos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T11:25:22.347Z",
+              "WhenOpened": "2025-12-05T11:38:05.071Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemigo.cs",
+              "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Enemies\\Enemigo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemigo.cs",
+              "ToolTip": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Enemies\\Enemigo.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemigo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T11:38:02.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JohnMovement.cs",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\My project\\Assets\\scripts\\JohnMovement.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\ana.montero\\My project\\Assets\\scripts\\JohnMovement.cs",
+              "ToolTip": "C:\\Users\\ana.montero\\My project\\Assets\\scripts\\JohnMovement.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\ana.montero\\My project\\Assets\\scripts\\JohnMovement.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T09:30:02.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MonoBehaviourBlobbie.cs",
+              "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Player\\MonoBehaviourBlobbie.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\MonoBehaviourBlobbie.cs",
+              "ToolTip": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Player\\MonoBehaviourBlobbie.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\MonoBehaviourBlobbie.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowD8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T09:28:18.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MonoBehaviourBalaBlobbie.cs",
+              "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Player\\MonoBehaviourBalaBlobbie.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\MonoBehaviourBalaBlobbie.cs",
+              "ToolTip": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\Player\\MonoBehaviourBalaBlobbie.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\MonoBehaviourBalaBlobbie.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T09:26:28.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CambioDeVista.cs",
+              "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\UI\\CambioDeVista.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\CambioDeVista.cs",
+              "ToolTip": "C:\\Users\\juanl\\OneDrive\\Escritorio\\2\u00BA DAW\\Jueguito\\Assets\\Scripts\\UI\\CambioDeVista.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\CambioDeVista.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T11:25:22.347Z"
             }
           ]
         }
