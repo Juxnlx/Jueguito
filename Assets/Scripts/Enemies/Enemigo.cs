@@ -4,41 +4,41 @@ public class Enemigo : MonoBehaviour
 {
     // Array de sprites que se usan para la animación del enemigo
     public Sprite[] spritesAnimacion;
-
-    // Tiempo (en segundos) entre cada frame de animación
     public float tiempoAnimacion = 1f;
 
     // SpriteRenderer que se encarga de mostrar el sprite en pantalla
     private SpriteRenderer renderizadorSprite;
-
-    // Índice del frame actual de la animación
     private int indiceAnimacion;
+
+    // Columna a la que pertenece este enemigo
+    public int columna;
 
     private void Awake()
     {
-        // Obtenemos el componente SpriteRenderer del enemigo
         renderizadorSprite = GetComponent<SpriteRenderer>();
     }
 
     private void Start()
     {
-        // Llama a la función AnimarSprite por primera vez después de tiempoAnimacion
-        // y luego se repite cada tiempoAnimacion segundos
         InvokeRepeating(nameof(AnimarSprite), tiempoAnimacion, tiempoAnimacion);
     }
 
     private void AnimarSprite()
     {
-        // Avanzamos al siguiente frame de animación
         indiceAnimacion++;
-
-        // Si llegamos al final del array de sprites, volvemos al primer frame
         if (indiceAnimacion >= spritesAnimacion.Length)
-        {
             indiceAnimacion = 0;
-        }
 
-        // Asignamos el sprite actual al SpriteRenderer
         renderizadorSprite.sprite = spritesAnimacion[indiceAnimacion];
+    }
+
+    private void OnDestroy()
+    {
+        // Actualiza los enemigos frontales en el gestor
+        Enemigos gestor = GetComponentInParent<Enemigos>();
+        if (gestor != null)
+        {
+            gestor.ActualizarEnemigosFrontales();
+        }
     }
 }
