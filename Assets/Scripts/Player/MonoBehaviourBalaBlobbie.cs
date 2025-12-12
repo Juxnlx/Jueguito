@@ -26,6 +26,16 @@ public class MonoBehaviourBalaBlobbie : MonoBehaviour
     {
         if (yaImpacto) return;
 
+        // Si impacta con una base, destruir la bala
+        if (other.GetComponent<Base>() != null)
+        {
+            yaImpacto = true;
+            // La base NO recibe daño de las balas del jugador
+            Destroy(gameObject);
+            return;
+        }
+
+        // Si contiene "Base" en el nombre (tu código original)
         if (other.gameObject.name.Contains("Base"))
         {
             yaImpacto = true;
@@ -33,6 +43,7 @@ public class MonoBehaviourBalaBlobbie : MonoBehaviour
             return;
         }
 
+        // Si impacta con un enemigo
         Enemigo enemigo = other.GetComponent<Enemigo>();
         if (enemigo != null)
         {

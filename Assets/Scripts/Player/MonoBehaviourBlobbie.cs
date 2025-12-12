@@ -22,7 +22,7 @@ public class MonoBehaviourBlobbie : MonoBehaviour
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        speed = 5; // Ajusta la velocidad según necesites
+        speed = 3; // Ajusta la velocidad según necesites
 
         // agarra el componente que está en el inspector. carga el componente animator del objeto en la variable
         animator = GetComponent<Animator>();
@@ -37,7 +37,7 @@ public class MonoBehaviourBlobbie : MonoBehaviour
         //actualiza la variable de run del animator para controlar las idle
         animator.SetBool("Run", vertical != 0.0f);
 
-        if (Input.GetKey(KeyCode.Space) && Time.time > ultimoDisparo + 0.25f)
+        if (Input.GetKey(KeyCode.Space) && Time.time > ultimoDisparo + 0.7f)
         {
             Shoot();
             ultimoDisparo = Time.time;
