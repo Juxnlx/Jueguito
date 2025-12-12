@@ -4,32 +4,40 @@ public class BalaEnemigo : MonoBehaviour
 {
     public float speed = 10f;
     private Rigidbody2D rb2D;
+    private bool yaImpacto = false;
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        rb2D.velocity = Vector2.left * speed; // se mueve hacia la izquierda
+        rb2D.velocity = Vector2.left * speed;
+        Destroy(gameObject, 3f);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (yaImpacto) return;
+
         // Si choca con el jugador
         if (other.CompareTag("Player"))
         {
-            // Aquí puedes restar vida al jugador
-            Destroy(gameObject); // destruir bala
+            yaImpacto = true;
+            Destroy(gameObject);
+            return;
         }
 
-        // Si choca con algo más (opcional)
+        // Si choca con una base
+        if (other.GetComponent<Base>() != null)
+        {
+            yaImpacto = true;
+            Destroy(gameObject);
+            return;
+        }
+
+        // Si choca con un obstáculo
         if (other.CompareTag("Obstaculo"))
         {
+            yaImpacto = true;
             Destroy(gameObject);
         }
-    }
-
-    private void Update()
-    {
-        // Destruir bala después de 3 segundos para no saturar la escena
-        Destroy(gameObject, 3f);
     }
 }

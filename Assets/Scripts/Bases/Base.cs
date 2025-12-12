@@ -28,20 +28,14 @@ public class Base : MonoBehaviour
         // Si le impacta una bala enemiga
         if (other.GetComponent<BalaEnemigo>() != null)
         {
-            RecibirDanio();
+            RecibirDanio(1);
             Destroy(other.gameObject); // Destruir la bala
-        }
-
-        // Si le impacta un enemigo directamente (opcional)
-        if (other.GetComponent<Enemigo>() != null)
-        {
-            RecibirDanio();
         }
     }
 
-    private void RecibirDanio()
+    public void RecibirDanio(int cantidad = 1)
     {
-        vidaActual--;
+        vidaActual -= cantidad;
 
         // Actualizar sprite según el daño (si tienes sprites)
         ActualizarSprite();

@@ -15,7 +15,6 @@ public class Enemigos : MonoBehaviour
     public float margenArbustos = 0.1f;
     public float posicionInicialX = 0.95f;
 
-    // Disparo enemigos
     public GameObject prefabBalaEnemigo;
     public float cooldownDisparo = 2f;
     private float ultimoDisparo = 0f;
@@ -24,12 +23,10 @@ public class Enemigos : MonoBehaviour
     private float limiteSuperior;
     private float limiteInferior;
 
-    // Diccionario columna → enemigo frontal
     private Dictionary<int, Enemigo> enemigosFrontales;
 
     private void Awake()
     {
-        // Ajuste de separaciones según tamaño de los prefabs
         float anchoMax = Mathf.Max(prefabM.GetComponent<SpriteRenderer>().bounds.size.x,
                                    prefabS.GetComponent<SpriteRenderer>().bounds.size.x);
         float altoMax = Mathf.Max(prefabM.GetComponent<SpriteRenderer>().bounds.size.y,
@@ -51,7 +48,7 @@ public class Enemigos : MonoBehaviour
             0
         );
 
-        int numColumnasS = 3; // primeras 3 columnas → setas
+        int numColumnasM = 2; // primeras 2 columnas → minotauros (atrás)
         for (int fila = 0; fila < filas; fila++)
         {
             Vector3 posicionFila = new Vector3(
@@ -62,9 +59,15 @@ public class Enemigos : MonoBehaviour
 
             for (int col = 0; col < columnas; col++)
             {
-                Enemigo prefabElegido = (col < numColumnasS) ? prefabS : prefabM;
+                // Las primeras columnas son minotauros (atrás), las últimas setas (al frente)
+                bool esMinotauro = col < numColumnasM;
+                Enemigo prefabElegido = esMinotauro ? prefabM : prefabS;
                 Enemigo enemigo = Instantiate(prefabElegido, this.transform);
-                enemigo.columna = col; // asignamos columna
+                enemigo.columna = col;
+
+                // Asignar tipo
+                enemigo.tipo = esMinotauro ? Enemigo.TipoEnemigo.Minotauro : Enemigo.TipoEnemigo.Seta;
+
                 Vector3 posicion = posicionFila;
                 posicion.x -= col * separacionX;
                 enemigo.transform.position = posicion;
@@ -76,7 +79,6 @@ public class Enemigos : MonoBehaviour
 
     private void Update()
     {
-        // Movimiento vertical
         float dirY = subiendo ? 1 : -1;
         transform.position += Vector3.up * dirY * velocidad * Time.deltaTime;
 
@@ -96,10 +98,10 @@ public class Enemigos : MonoBehaviour
             }
         }
 
-        // Disparo de enemigos frontales
+        // Disparo solo de setas que no tengan enemigos delante
         if (Time.time > ultimoDisparo + cooldownDisparo)
         {
-            DispararFrontales();
+            DispararSetasDisponibles();
             ultimoDisparo = Time.time;
         }
     }
@@ -126,7 +128,7 @@ public class Enemigos : MonoBehaviour
                 if (e == null || !e.gameObject.activeInHierarchy) continue;
                 if (e.columna != col) continue;
 
-                if (frontal == null || e.transform.position.y < frontal.transform.position.y)
+                if (frontal == null || e.transform.position.x < frontal.transform.position.x)
                 {
                     frontal = e;
                 }
@@ -139,15 +141,42 @@ public class Enemigos : MonoBehaviour
         }
     }
 
-    private void DispararFrontales()
+    private void DispararSetasDisponibles()
     {
-        foreach (var kvp in enemigosFrontales)
+        foreach (Transform enemigoT in transform)
         {
-            Enemigo e = kvp.Value;
-            if (e != null && e.gameObject.activeInHierarchy)
+            if (!enemigoT.gameObject.activeInHierarchy) continue;
+
+            Enemigo e = enemigoT.GetComponent<Enemigo>();
+            if (e != null && e.PuedoDisparar())
             {
                 Instantiate(prefabBalaEnemigo, e.transform.position + Vector3.left * 0.1f, Quaternion.identity);
             }
         }
+    }
+
+    public bool NoHayEnemigoDelante(Enemigo enemigo)
+    {
+        // Verificar si hay algún enemigo más a la izquierda (delante) en la misma fila
+        float posY = enemigo.transform.position.y;
+        float posX = enemigo.transform.position.x;
+
+        foreach (Transform enemigoT in transform)
+        {
+            if (!enemigoT.gameObject.activeInHierarchy) continue;
+            if (enemigoT.gameObject == enemigo.gameObject) continue;
+
+            Enemigo otro = enemigoT.GetComponent<Enemigo>();
+            if (otro == null) continue;
+
+            // Si está en la misma fila (con margen de error) y más a la izquierda
+            if (Mathf.Abs(otro.transform.position.y - posY) < separacionY * 0.5f &&
+                otro.transform.position.x < posX)
+            {
+                return false; // Hay alguien delante
+            }
+        }
+
+        return true; // No hay nadie delante
     }
 }
