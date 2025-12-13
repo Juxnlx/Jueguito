@@ -26,9 +26,11 @@ public class BalaEnemigo : MonoBehaviour
         }
 
         // Si choca con una base
-        if (other.GetComponent<Base>() != null)
+        Base baseObj = other.GetComponent<Base>();
+        if (baseObj != null)
         {
             yaImpacto = true;
+            baseObj.RecibirDanio(1); // NUEVO: Hacer daño a la base
             Destroy(gameObject);
             return;
         }

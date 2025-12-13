@@ -43,13 +43,16 @@ public class MonoBehaviourBalaBlobbie : MonoBehaviour
             return;
         }
 
-        // Si impacta con un enemigo
+        // Si impacta con un enemigo - MODIFICADO
         Enemigo enemigo = other.GetComponent<Enemigo>();
         if (enemigo != null)
         {
             yaImpacto = true;
-            Destroy(other.gameObject);
-            Destroy(gameObject);
+
+            // NUEVO: Llamar al método Morir() en lugar de destruir directamente
+            enemigo.Morir();
+
+            Destroy(gameObject); // Destruir la bala inmediatamente
         }
     }
 }

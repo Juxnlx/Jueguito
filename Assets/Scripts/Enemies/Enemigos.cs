@@ -14,10 +14,12 @@ public class Enemigos : MonoBehaviour
     public float pasoIzquierda = 0.2f;
     public float margenArbustos = 0.1f;
     public float posicionInicialX = 0.95f;
+    public float limiteDerecho = 0.3f; // Límite en X que no pueden sobrepasar (ajústalo según dónde estén tus bases)
 
     public GameObject prefabBalaEnemigo;
-    public float cooldownDisparo = 2f;
-    private float ultimoDisparo = 0f;
+    public float tiempoMinimoEntreDisparos = 1f; // Tiempo mínimo entre disparos
+    public float tiempoMaximoEntreDisparos = 3f; // Tiempo máximo entre disparos
+    private float proximoDisparo = 0f;
 
     private bool subiendo = true;
     private float limiteSuperior;
@@ -42,9 +44,10 @@ public class Enemigos : MonoBehaviour
         limiteSuperior = topRight.y - altoEnemigo / 2 - margenArbustos;
 
         float anchoJuego = topRight.x - bottomLeft.x;
+        // MODIFICADO: Posición inicial más clara
         Vector3 startPos = new Vector3(
             bottomLeft.x + anchoJuego * posicionInicialX,
-            (limiteSuperior + limiteInferior) / 2f,
+            (limiteSuperior + limiteInferior) / 2f + 1f, // El +1f los sube 1 unidad
             0
         );
 
@@ -75,12 +78,20 @@ public class Enemigos : MonoBehaviour
         }
 
         ActualizarEnemigosFrontales();
+
+        // NUEVO: Inicializar el primer disparo con tiempo aleatorio
+        proximoDisparo = Time.time + Random.Range(tiempoMinimoEntreDisparos, tiempoMaximoEntreDisparos);
     }
 
     private void Update()
     {
         float dirY = subiendo ? 1 : -1;
-        transform.position += Vector3.up * dirY * velocidad * Time.deltaTime;
+
+        // NUEVO: Solo mover si no han llegado al límite derecho
+        if (transform.position.x > limiteDerecho)
+        {
+            transform.position += Vector3.up * dirY * velocidad * Time.deltaTime;
+        }
 
         foreach (Transform enemigo in transform)
         {
@@ -98,20 +109,26 @@ public class Enemigos : MonoBehaviour
             }
         }
 
-        // Disparo solo de setas que no tengan enemigos delante
-        if (Time.time > ultimoDisparo + cooldownDisparo)
+        // Disparo con tiempo aleatorio
+        if (Time.time >= proximoDisparo)
         {
-            DispararSetasDisponibles();
-            ultimoDisparo = Time.time;
+            DispararSetaAleatoria();
+            float tiempoAleatorio = Random.Range(tiempoMinimoEntreDisparos, tiempoMaximoEntreDisparos);
+            proximoDisparo = Time.time + tiempoAleatorio;
         }
     }
 
     private void CambiarDireccion()
     {
         subiendo = !subiendo;
-        Vector3 pos = transform.position;
-        pos.x -= pasoIzquierda;
-        transform.position = pos;
+
+        // NUEVO: Solo avanzar hacia la derecha si no han llegado al límite
+        if (transform.position.x > limiteDerecho)
+        {
+            Vector3 pos = transform.position;
+            pos.x -= pasoIzquierda;
+            transform.position = pos;
+        }
     }
 
     public void ActualizarEnemigosFrontales()
@@ -141,8 +158,11 @@ public class Enemigos : MonoBehaviour
         }
     }
 
-    private void DispararSetasDisponibles()
+    private void DispararSetaAleatoria()
     {
+        // Crear una lista de setas que pueden disparar
+        List<Enemigo> setasDisponibles = new List<Enemigo>();
+
         foreach (Transform enemigoT in transform)
         {
             if (!enemigoT.gameObject.activeInHierarchy) continue;
@@ -150,8 +170,23 @@ public class Enemigos : MonoBehaviour
             Enemigo e = enemigoT.GetComponent<Enemigo>();
             if (e != null && e.PuedoDisparar())
             {
-                Instantiate(prefabBalaEnemigo, e.transform.position + Vector3.left * 0.1f, Quaternion.identity);
+                setasDisponibles.Add(e);
             }
+        }
+
+        // Si hay setas disponibles, elegir UNA al azar
+        if (setasDisponibles.Count > 0)
+        {
+            int indiceAleatorio = Random.Range(0, setasDisponibles.Count);
+            Enemigo setaElegida = setasDisponibles[indiceAleatorio];
+
+            Debug.Log("Disparando seta. Total disponibles: " + setasDisponibles.Count); // NUEVO
+
+            // Activar la animación de ataque
+            setaElegida.Atacar();
+
+            // Crear la bala
+            Instantiate(prefabBalaEnemigo, setaElegida.transform.position + Vector3.left * 0.1f, Quaternion.identity);
         }
     }
 
