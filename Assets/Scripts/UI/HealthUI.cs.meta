@@ -3,14 +3,7 @@ guid: bd29dd8e76947414288febfa828a3983
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - heartPrefab: {fileID: 3454456556428616137, guid: 84a14c54bfaf3e04c9da84644a99b126, type: 3}
-  - heartsContainer: {instanceID: 0}
-  - heartFull: {fileID: 1118238678, guid: fcfd3d7cdd88f614a8dca8c99f659ae9, type: 3}
-  - heartEmpty: {fileID: -1296142265, guid: fcfd3d7cdd88f614a8dca8c99f659ae9, type: 3}
-  - animacionPerderVida: {fileID: 7400000, guid: d599f0ec49156414c8acb4e3d0247887, type: 2}
-  - animacionGanarVida: {instanceID: 0}
-  - animacionIdle: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
