@@ -4,37 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< Updated upstream
   m_Scenes: []
-=======
-  m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/Fase1.unity
-    guid: 3f650d83318b84d458e4b497b4cc4819
-  - enabled: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-    path: Assets/Scenes/GameOver.unity
-    guid: 4b9af0639cc90e54b84d567c26d807c3
-  - enabled: 1
-    path: Assets/Scenes/WinWIn.unity
-    guid: 32c49cf6107060f4682bcc11a65ce53f
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-    path: Assets/Scenes/Menu.unity
-    guid: f228f94148e62b9498703c859cd7599e
->>>>>>> parent of 6f5fa5b (Escenas de ganar y perder)
-=======
-    path: Assets/Scenes/Menu.unity
-    guid: f228f94148e62b9498703c859cd7599e
->>>>>>> parent of 6f5fa5b (Escenas de ganar y perder)
   m_configObjects: {}
