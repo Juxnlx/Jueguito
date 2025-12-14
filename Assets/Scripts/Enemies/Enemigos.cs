@@ -24,8 +24,6 @@ public class Enemigos : MonoBehaviour
     private float limiteSuperior;
     private float limiteInferior;
     private Dictionary<int, Enemigo> enemigosFrontales;
-    private bool victoriaActivada = false;
-    private bool juegoIniciado = false;
 
     private void Start()
     {
@@ -80,8 +78,6 @@ public class Enemigos : MonoBehaviour
 
         ActualizarEnemigosFrontales();
         proximoDisparo = Time.time + Random.Range(tiempoMinimoEntreDisparos, tiempoMaximoEntreDisparos);
-
-        juegoIniciado = true;
     }
 
     private void Update()
@@ -115,8 +111,6 @@ public class Enemigos : MonoBehaviour
             float tiempoAleatorio = Random.Range(tiempoMinimoEntreDisparos, tiempoMaximoEntreDisparos);
             proximoDisparo = Time.time + tiempoAleatorio;
         }
-
-        VerificarVictoria();
     }
 
     private void CambiarDireccion()
@@ -228,32 +222,4 @@ public class Enemigos : MonoBehaviour
             e.ActivarAvanceRapido(viaLibre);
         }
     }
-
-    public void VerificarVictoria()
-    {
-        if (!juegoIniciado) return; // No verificar hasta que el juego haya empezado
-        if (victoriaActivada) return; // Ya se activó
-
-        int enemigosRestantes = 0;
-
-        foreach (Transform enemigoT in transform)
-        {
-            if (enemigoT.gameObject.activeInHierarchy)
-            {
-                enemigosRestantes++;
-            }
-        }
-
-        if (enemigosRestantes == 0)
-        {
-            victoriaActivada = true;
-            Debug.Log("¡Victoria!");
-
-            if (GameManager.Instance != null)
-            {
-                GameManager.Instance.Victoria();
-            }
-        }
-    }
-
 }

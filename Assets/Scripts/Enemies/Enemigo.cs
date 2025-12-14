@@ -21,7 +21,7 @@ public class Enemigo : MonoBehaviour
 
     [SerializeField] private float velocidadAvanceRapido = 3f;
     private Rigidbody2D rb2D;
-    public bool baseDestruidaEnContacto = false;
+    private bool baseDestruidaEnContacto = false;
 
     private void Awake()
     {
@@ -69,15 +69,6 @@ public class Enemigo : MonoBehaviour
             else if (avanzandoRapido)
             {
                 AvanzarHaciaBases();
-
-                Vector3 bottomLeft = Camera.main.ViewportToWorldPoint(Vector3.zero);
-                if (transform.position.x < bottomLeft.x)
-                {
-                    if (GameManager.Instance != null)
-                    {
-                        GameManager.Instance.GameOver();
-                    }
-                }
             }
         }
     }
@@ -146,6 +137,7 @@ public class Enemigo : MonoBehaviour
             }
         }
     }
+
     private void AtacarConHacha()
     {
         if (animator != null)
@@ -231,7 +223,6 @@ public class Enemigo : MonoBehaviour
         {
             gestor.ActualizarEnemigosFrontales();
             gestor.VerificarMinotaurosLibres();
-            gestor.VerificarVictoria();
         }
     }
 }

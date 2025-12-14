@@ -24,9 +24,6 @@ public class MonoBehaviourBlobbie : MonoBehaviour
     // ===== REFERENCIA A LA UI DE VIDA =====
     private HealthUI healthUI; // Referencia al sistema de corazones
 
-    public AudioClip sonidoDisparo; // Arrastra aquí tu efecto de sonido
-    private AudioSource audioSource;
-
     void Start()
     {
         // Inicializar componentes
@@ -79,19 +76,15 @@ public class MonoBehaviourBlobbie : MonoBehaviour
     // ===== MÉTODO DE DISPARO =====
     private void Shoot()
     {
+        // Crear bala ligeramente a la derecha del jugador
         GameObject bala = Instantiate(
             prefabBala,
             transform.position + Vector3.right * 0.1f,
             Quaternion.identity
         );
 
+        // Destruir la bala después de 1 segundo si no impacta nada
         Destroy(bala, 1f);
-
-        // ===== Reproducir sonido de disparo =====
-        if (sonidoDisparo != null)
-        {
-            AudioSource.PlayClipAtPoint(sonidoDisparo, transform.position, 1f);
-        }
     }
 
     // ===== SISTEMA DE DAÑO =====
@@ -184,20 +177,11 @@ public class MonoBehaviourBlobbie : MonoBehaviour
         // Activar animación de muerte
         if (animator != null)
         {
-            animator.SetTrigger("Die");
+            animator.SetTrigger("Die"); // Asegúrate de tener este trigger en tu Animator
         }
 
-        // NUEVO: Llamar a Game Over después de la animación
-        Invoke(nameof(IrAGameOver), 1.5f);
-    }
-
-    // NUEVO: Método para ir a Game Over
-    private void IrAGameOver()
-    {
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.GameOver();
-        }
+        // Destruir el jugador después de la animación (ajusta el tiempo)
+        Destroy(gameObject, 1.5f); // Ajusta según la duración de tu animación de muerte
     }
 
     // ===== MÉTODO PARA DESTRUIR BALA (mantenido por compatibilidad) =====

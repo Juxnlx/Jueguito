@@ -47,21 +47,6 @@ public class Base : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
-    {
-        // Verificar si todas las bases han sido destruidas
-        Base[] basesRestantes = FindObjectsOfType<Base>();
-
-        // Si esta es la última base (solo queda ella misma)
-        if (basesRestantes.Length <= 0)
-        {
-            if (GameManager.Instance != null)
-            {
-                GameManager.Instance.GameOver();
-            }
-        }
-    }
-
     private void ActualizarSprite()
     {
         // Si no tienes sprites de daño, puedes cambiar el color
