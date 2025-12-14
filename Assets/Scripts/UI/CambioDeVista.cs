@@ -1,20 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour
+public class CambioDeVista : MonoBehaviour
 {
-    [Tooltip("Arrastra aquí la escena desde el Project")]
-    public Object escena;
-
-    public void CambiarEscena()
+    // Start is called before the first frame update
+    void Start()
     {
-        if (escena != null)
-        {
-            SceneManager.LoadScene(escena.name);
-        }
-        else
-        {
-            Debug.LogError("No se ha asignado ninguna escena!");
-        }
+        
+    }
+    public void botonMenu()
+    {
+        SceneManager.LoadScene("Fase1");
     }
 }
