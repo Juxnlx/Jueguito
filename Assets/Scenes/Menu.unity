@@ -2256,6 +2256,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1477412280
 GameObject:
@@ -3666,6 +3667,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+=======
+>>>>>>> parent of 6f5fa5b (Escenas de ganar y perder)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1660610851
 GameObject:
@@ -3914,6 +3917,7 @@ Transform:
   serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.4755, y: -0.046712484, z: 3.3230603}
   m_LocalScale: {x: 1.0962942, y: 0.9277168, z: 1}
@@ -3928,6 +3932,8 @@ Transform:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> parent of 6f5fa5b (Escenas de ganar y perder)
 =======
 >>>>>>> parent of 6f5fa5b (Escenas de ganar y perder)
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -4041,6 +4047,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1812916478
@@ -4539,6 +4546,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+=======
+>>>>>>> parent of 6f5fa5b (Escenas de ganar y perder)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1834559039
 GameObject:
@@ -5300,6 +5309,7 @@ SceneRoots:
   - {fileID: 1183615929}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 728920024}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -5382,3 +5392,5 @@ SceneRoots:
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 6f5fa5b (Escenas de ganar y perder)
