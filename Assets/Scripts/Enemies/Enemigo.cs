@@ -46,6 +46,12 @@ public class Enemigo : MonoBehaviour
     {
         if (estaMuriendo) return;
 
+        // AÑADIR ESTA COMPROBACIÓN
+        if (spritesAnimacion == null || spritesAnimacion.Length == 0)
+        {
+            return; // Si no hay sprites, no animar
+        }
+
         indiceAnimacion++;
         if (indiceAnimacion >= spritesAnimacion.Length)
             indiceAnimacion = 0;

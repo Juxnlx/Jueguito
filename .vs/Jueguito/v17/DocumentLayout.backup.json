@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|c:\\users\\usuario\\documents\\github\\jueguito\\assets\\scripts\\enemies\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\assets\\scripts\\enemies\\enemigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|c:\\users\\usuario\\documents\\github\\jueguito\\assets\\scripts\\ui\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|c:\\users\\usuario\\documents\\github\\jueguito\\assets\\scripts\\bases\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bases\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|c:\\users\\usuario\\documents\\github\\jueguito\\assets\\scripts\\player\\monobehaviourbalablobbie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\monobehaviourbalablobbie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\assets\\scripts\\player\\monobehaviourblobbie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\monobehaviourblobbie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\assets\\scripts\\player\\monobehaviourbalablobbie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\monobehaviourbalablobbie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\assets\\scripts\\enemies\\balaenemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\balaenemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\assets\\scripts\\enemies\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\assets\\scripts\\ui\\cambiodevista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\cambiodevista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\assets\\scripts\\ui\\startscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\startscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\assets\\scripts\\ui\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\assets\\scripts\\enemies\\enemigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\assets\\scripts\\bases\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B543E12E-7D1C-225D-DF8B-EF6F1B6B1618}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bases\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +46,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "CambioDeVista.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\UI\\CambioDeVista.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\CambioDeVista.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\UI\\CambioDeVista.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\CambioDeVista.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:07:21.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StartScene.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\UI\\StartScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\StartScene.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\UI\\StartScene.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\StartScene.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T19:48:57.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Base.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\Bases\\Base.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bases\\Base.cs",
@@ -50,12 +82,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Bases\\Base.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAuwDcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T14:36:12.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T14:36:12.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\UI\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\GameManager.cs",
@@ -63,25 +94,23 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\GameManager.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAuwBUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T14:34:33.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T14:34:33.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Enemigo.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\Enemies\\Enemigo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemigo.cs",
               "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\Enemies\\Enemigo.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemigo.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBcAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAIA3wCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T12:19:34.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T12:19:34.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "BalaEnemigo.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\Enemies\\BalaEnemigo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\BalaEnemigo.cs",
@@ -93,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Enemigos.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\Enemies\\Enemigos.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemigos.cs",
@@ -101,33 +130,32 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemigos.cs",
               "ViewState": "AgIAAOkAAAAAAAAAAAAuwAABAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T12:08:40.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T12:08:40.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MonoBehaviourBlobbie.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\Player\\MonoBehaviourBlobbie.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\MonoBehaviourBlobbie.cs",
               "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\Player\\MonoBehaviourBlobbie.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\MonoBehaviourBlobbie.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAuwMgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAiwMwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T12:08:00.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T12:08:00.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "MonoBehaviourBalaBlobbie.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\Player\\MonoBehaviourBalaBlobbie.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\MonoBehaviourBalaBlobbie.cs",
               "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\Jueguito\\Assets\\Scripts\\Player\\MonoBehaviourBalaBlobbie.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\MonoBehaviourBalaBlobbie.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAuwDkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAuwDgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T12:07:44.058Z"
+              "WhenOpened": "2025-12-14T12:07:44.058Z",
+              "EditorCaption": ""
             }
           ]
         }

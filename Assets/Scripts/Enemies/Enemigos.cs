@@ -12,9 +12,9 @@ public class Enemigos : MonoBehaviour
     public float velocidad = 0.7f;
     public float pasoIzquierda = 0.2f;
     public float margenArbustos = 0.1f;
-    public float posicionInicialX = 1.5f;
+    public float posicionInicialX = 0.7f;
     public float desplazamientoVertical = 1f;
-    public float limiteDerecho = 0.3f;
+    public float limiteDerecho = 1.7f;
     public GameObject prefabBalaEnemigo;
     public float tiempoMinimoEntreDisparos = 1f;
     public float tiempoMaximoEntreDisparos = 3f;
@@ -49,7 +49,7 @@ public class Enemigos : MonoBehaviour
 
         float anchoJuego = topRight.x - bottomLeft.x;
         Vector3 startPos = new Vector3(
-            bottomLeft.x + anchoJuego * posicionInicialX,
+            topRight.x - anchoJuego * posicionInicialX,
             (limiteSuperior + limiteInferior) / 2f + desplazamientoVertical,
             0
         );

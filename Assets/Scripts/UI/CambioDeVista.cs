@@ -12,6 +12,10 @@ public class CambioDeVista : MonoBehaviour
     }
     public void botonMenu()
     {
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void botonFase() {
         SceneManager.LoadScene("Fase1");
     }
 }
