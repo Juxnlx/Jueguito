@@ -151,7 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d45ac843063304495e633a8ff79980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: {fileID: 102900000, guid: 3f650d83318b84d458e4b497b4cc4819, type: 3}
 --- !u!4 &143668351
 Transform:
   m_ObjectHideFlags: 0
@@ -1083,8 +1082,8 @@ Transform:
   m_GameObject: {fileID: 1331826730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0094, y: 0.031, z: 0}
-  m_LocalScale: {x: 1.1052232, y: 0.9256, z: 1}
+  m_LocalPosition: {x: 0.1053, y: 0.031, z: 0}
+  m_LocalScale: {x: 1.2252381, y: 0.9256, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1118,7 +1117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d45ac843063304495e633a8ff79980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: {fileID: 102900000, guid: f228f94148e62b9498703c859cd7599e, type: 3}
 --- !u!4 &1786555250
 Transform:
   m_ObjectHideFlags: 0
@@ -1192,7 +1190,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ad816d66624db01469bed0a804155309, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be74190231e63a944a0418c0a54a13c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1212,7 +1210,7 @@ Transform:
   m_GameObject: {fileID: 1841333265}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 1.24, z: -1.08}
+  m_LocalPosition: {x: 0.02, y: 1.24, z: -4.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1295,7 +1293,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d45ac843063304495e633a8ff79980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: {fileID: 0}
 --- !u!1001 &2454160840470041461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1373,7 +1370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d45ac843063304495e633a8ff79980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
