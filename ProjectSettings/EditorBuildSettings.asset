@@ -13,9 +13,12 @@ EditorBuildSettings:
     guid: 3f650d83318b84d458e4b497b4cc4819
   - enabled: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -27,6 +30,7 @@ EditorBuildSettings:
     guid: 32c49cf6107060f4682bcc11a65ce53f
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     path: Assets/Scenes/Menu.unity
     guid: f228f94148e62b9498703c859cd7599e
@@ -37,6 +41,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: f228f94148e62b9498703c859cd7599e
 >>>>>>> parent of 6f5fa5b (Escenas de ganar y perder)
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   m_configObjects: {}
